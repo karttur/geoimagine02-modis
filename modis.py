@@ -3,21 +3,30 @@ Created on 27 apr. 2018
 
 @author: thomasgumbricht
 '''
-import urllib.request
-from html.parser import HTMLParser
+
+# Standard library imports
+
 import os
+
 from sys import exit
-from shutil import move
 
+from shutil import move, copyfile, copyfileobj
 
-#from geoimagine.kartturmain import Composition, RegionLayer, RasterLayer
+import urllib.request
+
+from html.parser import HTMLParser
+
+# Third party imports
+
+# Package application imports
+
 from params import Composition, LayerCommon, RegionLayer, VectorLayer, RasterLayer
-from ancillary import ancillary_import
+
+#from ancillary import ancillary_import
+
 import support.karttur_dt as mj_dt 
+
 from gis import GetVectorProjection, GetRasterMetaData, MjProj, Geometry, ESRIOpenGetLayer
-from shutil import copyfile, copyfileobj
-
-
 
 class ModisComposition:
     '''
