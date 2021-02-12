@@ -1,5 +1,6 @@
 '''
 Created on 27 apr. 2018
+Last update 12 Feb 2021
 
 @author: thomasgumbricht
 '''
@@ -20,13 +21,13 @@ from html.parser import HTMLParser
 
 # Package application imports
 
-from params import Composition, LayerCommon, RegionLayer, VectorLayer, RasterLayer
+from geoimagine.params import Composition, LayerCommon, RegionLayer, VectorLayer, RasterLayer
 
 #from ancillary import ancillary_import
 
-import support.karttur_dt as mj_dt 
+import geoimagine.support.karttur_dt as mj_dt 
 
-from gis import GetVectorProjection, GetRasterMetaData, MjProj, Geometry, ESRIOpenGetLayer
+from geoimagine.gis import GetVectorProjection, GetRasterMetaData, MjProj, Geometry, ESRIOpenGetLayer
 
 class ModisComposition:
     '''
